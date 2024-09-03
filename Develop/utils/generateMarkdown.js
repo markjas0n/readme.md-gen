@@ -63,4 +63,3 @@ For any questions, please contact me via [GitHub](https://github.com/${data.gith
 
 // Export the generateMarkdown function to be used in other files
 module.exports = generateMarkdown;
-git
