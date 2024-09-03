@@ -5,6 +5,10 @@
 ## Description
 
 This command-line application allows developers to quickly generate a professional README.md file for their projects. The application prompts the user for information about the project, including the title, description, installation instructions, usage information, contribution guidelines, test instructions, and license. It then generates a README.md file based on the user's input.
+![Project Screenshot](Develop/assets/images/readme.gif)
+![Project Screenshot3](Develop/assets/images/readme-gen2.png)
+![Project Screenshot2](Develop/assets/images/readme-gen1.png)
+
 
 ## Table of Contents
 * [Installation](#installation)
