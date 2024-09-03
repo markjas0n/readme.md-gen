@@ -57,11 +57,16 @@ function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
       err ? console.error(err) : console.log('README.md generated!') // Log error or success message
     );
-  }}
-}
+  }
 
 // TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+function init() {
+    inquirer.prompt(questions) // Prompt the user with the questions array
+      .then((responses) => {
+        const markdown = generateMarkdown(responses); // Generate markdown content based on user responses
+        writeToFile('README.md', markdown); // Write the markdown content to a README.md file
+      });
+  }
+  
+  // Function call to initialize the application
+  init();
