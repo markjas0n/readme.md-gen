@@ -7,3 +7,21 @@ function renderLicenseBadge(license) {
   return ''; // Return an empty string if no license is selected
 }
 
+// Function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) {
+  if (license !== 'None') { // Check if a license is selected
+    return `\n* [License](#license)\n`; // Return the link to the license section in the README
+  }
+  return ''; // Return an empty string if no license is selected
+}
+
+// Function that returns the license section of README
+// If there is no license, return an empty string
+function renderLicenseSection(license) {
+  if (license !== 'None') { // Check if a license is selected
+    return `## License\nThis project is licensed under the ${license} license.`; // Return the license section content
+  }
+  return ''; // Return an empty string if no license is selected
+}
+
